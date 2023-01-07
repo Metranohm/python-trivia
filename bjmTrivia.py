@@ -3,9 +3,8 @@ import random
 
 # define the main function
 def main():
-  while True:
-    # list of tuples containing the questions and answers
-    questions = [
+  # list of tuples containing the questions and answers
+  questions = [
       ( "What is the name of the band's leader and main songwriter?", "Anton Newcombe" ),
       ( "What year was the band formed?", "1990" ),
       ( "What genre of music does the band primarily play?", "Psychedelic rock" ),
@@ -35,63 +34,33 @@ def main():
       ( "Which album features the song 'Vacuum Boots'?", "Bravery, Repetition and Noise" ),
       ( "Which album features the song 'Wish I Could Fly'?", "Give It Back!" ),
       ( "Which album features the song 'The Clouds Are Lies'?", "Aufheben" ),
-    ]
+  ]
+  
 
-    # shuffle the questions
-    random.shuffle(questions)
+  # shuffle the questions
+  random.shuffle(questions)
 
-    # counter for the number of correct answers
-    correct = 0
+  # counter for the number of correct answers
+  correct = 0
 
-    # iterate through the questions
-    for question, answer in questions:
-      # ask the question
-      user_answer = input(f"{question}: ")
+  # iterate through the questions
+  for question, answer in questions:
+    # ask the question
+    user_answer = input(f"{question}: ")
 
-      # check if the answer is correct
-      if user_answer.lower() == answer.lower():
-        print("Correct!")
-        correct += 1
-      else:
-        print("Incorrect.")
+    # check if the answer is correct
+    if user_answer.lower() == answer.lower():
+      print("Correct!")
+      correct += 1
+    else:
+      print("Incorrect.")
 
-    # calculate the score
-    score = 100 * correct / len(questions)
+  # calculate the score
+  score = 100 * correct / len(questions)
 
-    # print the score
-    print(f"Your score is {score:.2f}.")
-
-    # ask the user if they want to play again
-    play_again = input("Would you like to play again? (Y/N) ")
-    if play_again.lower() != "y":
-      break
-
-    # set the questions to the second round of questions
-    questions = questions_2
+  # print the score
+  print(f"Your score is {score:.2f}.")
 
 # run the main function
 if __name__ == "__main__":
   main()
-# shuffle the questions
-    random.shuffle(questions)
-
-    # counter for the number of correct answers
-    correct = 0
-
-    # iterate through the questions
-    for question, answer in questions:
-      # ask the question
-      user_answer = input(f"{question}: ")
-
-      # check if the answer is correct
-      if user_answer.lower() == answer.lower():
-        print("Correct!")
-        correct += 1
-      else:
-        print("Incorrect.")
-
-    # calculate the score
-    score = 100 * correct / len(questions)
-
-    # print the score
-    print(f"Your score is {sco
