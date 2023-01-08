@@ -200,9 +200,9 @@ def play_trivia_game():
   answer = input(q20)
   if answer == a20:
     score += 1
-    print("Correct!\n")
+    print("Well figure it out!\n")
   else:
-    print("Incorrect. The correct answer is " + a20 + "\n")
+    print("Why don't you do something more meaningful? \n")
 
   # Final score
   print("You got " + str(score) + " out of 20 questions correct.")
