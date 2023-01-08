@@ -163,6 +163,18 @@ def play_trivia_game():
     print("Correct!\n")
   else:
     print("Incorrect. The correct answer is " + a16 + "\n")
+    
+  # Question 17
+  q17 = "Which beatle had a birth defect?\n"
+  a17 = "Ringo Starr"
+  answer = input(q17)
+  if answer == a17:
+    score += 1
+    print("Correct!\n")
+  else:
+    print("Incorrect. The correct answer is " + a17 + "\n")
+  
+  
 
   # Final score
   print("You got " + str(score) + " out of 20 questions correct.")
