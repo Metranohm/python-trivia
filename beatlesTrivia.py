@@ -153,9 +153,19 @@ def play_trivia_game():
     print("Correct!\n")
   else:
     print("Incorrect. The correct answer is " + a15 + "\n")
+  
+  # Question 16
+  q16 = "Which beatle was the most talented?\n"
+  a16 = "George Harrison"
+  answer = input(q16)
+  if answer == a16:
+    score += 1
+    print("Correct!\n")
+  else:
+    print("Incorrect. The correct answer is " + a16 + "\n")
 
   # Final score
-  print("You got " + str(score) + " out of 15 questions correct.")
+  print("You got " + str(score) + " out of 20 questions correct.")
 
 # Start the game
 play_trivia_game()
