@@ -174,7 +174,25 @@ def play_trivia_game():
   else:
     print("Incorrect. The correct answer is " + a17 + "\n")
   
-  
+  # Question 18
+  q18 = "Which beatle barfed the most?\n"
+  a18 = "Paul McCartney"
+  answer = input(q18)
+  if answer == a18:
+    score += 1
+    print("Correct!\n")
+  else:
+    print("Incorrect. The correct answer is " + a18 + "\n")
+    
+  # Question 19
+  q19 = "What was the most humiliating thing that happened to the Beatles?\n"
+  a19 = "The Ed Sullivan Show"
+  answer = input(q19)
+  if answer == a19:
+    score += 1
+    print("Correct!\n")
+  else:
+    print("Incorrect. The correct answer is " + a19 + "\n")
 
   # Final score
   print("You got " + str(score) + " out of 20 questions correct.")
