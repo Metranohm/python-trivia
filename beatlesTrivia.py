@@ -193,6 +193,16 @@ def play_trivia_game():
     print("Correct!\n")
   else:
     print("Incorrect. The correct answer is " + a19 + "\n")
+    
+  # Question 20
+  q20 = "Why are you still playing this game?\n"
+  a20 = "I don't know"
+  answer = input(q20)
+  if answer == a20:
+    score += 1
+    print("Correct!\n")
+  else:
+    print("Incorrect. The correct answer is " + a20 + "\n")
 
   # Final score
   print("You got " + str(score) + " out of 20 questions correct.")
